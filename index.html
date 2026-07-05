@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vikas Bhat A — Full Stack Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ SIDEBAR / FILE TREE NAV ============ -->
+<nav class="sidebar" id="sidebar">
+  <div class="sidebar-head">
+    <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+  </div>
+  <div class="sidebar-title">EXPLORER</div>
+  <ul class="tree">
+    <li class="tree-item active" data-target="hero"><span class="tree-icon">📄</span>about.me</li>
+    <li class="tree-item" data-target="stack"><span class="tree-icon">📁</span>stack/</li>
+    <li class="tree-item" data-target="projects"><span class="tree-icon">📁</span>projects/</li>
+    <li class="tree-item" data-target="experience"><span class="tree-icon">📁</span>experience/</li>
+    <li class="tree-item" data-target="contact"><span class="tree-icon">📄</span>contact.me</li>
+  </ul>
+  <div class="sidebar-foot">
+    <div class="status-line">
+      <span class="status-dot"></span> connected
+    </div>
+  </div>
+</nav>
+
+<button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+
+<!-- ============ MAIN CONTENT ============ -->
+<main class="main">
+
+  <!-- HERO / TERMINAL -->
+  <section class="section hero" id="hero">
+    <div class="terminal">
+      <div class="terminal-bar">
+        <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+        <span class="terminal-name">bash — about.me</span>
+      </div>
+      <div class="terminal-body" id="terminalBody">
+        <p class="line"><span class="prompt">Name</span><span class="colon">:</span><span class="path">~</span></p>
+        <p class="line out" id="typeName"></p>
+        <p class="line"><span class="prompt">Intrested Role</span><span class="colon">:</span><span class="path">~</span></p>
+        <p class="line out" id="typeRole"></p>
+        <p class="line cursor-line"><span class="prompt">vikas@portfolio</span><span class="colon">:</span><span class="path">~</span><span class="dollar">$</span> <span class="cursor" id="blinkCursor">▋</span></p>
+      </div>
+    </div>
+
+    <div class="hero-meta">
+      <h1 class="hero-headline">Vikas Bhat A</h1>
+      <p class="hero-sub">BCA Completed · Full Stack Developer · Building things that actually ship</p>
+      <div class="hero-links">
+        <a href="#projects" class="btn btn-primary">View_Projects()</a>
+        <a href="#contact" class="btn btn-ghost">Get_In_Touch()</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STACK -->
+  <section class="section" id="stack">
+    <h2 class="section-title"><span class="tag"></span>Stack<span class="tag"></span></h2>
+    <p class="section-sub">// Tools I reach for first</p>
+
+    <div class="stack-grid">
+      <div class="stack-group">
+        <h3 class="stack-cat">01 — frontend</h3>
+        <ul class="stack-list">
+          <li>HTML5 / CSS3</li>
+          <li>JavaScript (ES6+)</li>
+          <li>React (basics)</li>
+        </ul>
+      </div>
+      <div class="stack-group">
+        <h3 class="stack-cat">02 — backend</h3>
+        <ul class="stack-list">
+          <li>Python · Flask</li>
+          <li>Node.js (basics)</li>
+          <li>REST APIs</li>
+        </ul>
+      </div>
+      <div class="stack-group">
+        <h3 class="stack-cat">03 — data</h3>
+        <ul class="stack-list">
+          <li>SQLite</li>
+          <li>MySQL</li>
+        </ul>
+      </div>
+      <div class="stack-group">
+        <h3 class="stack-cat">04 — tools</h3>
+        <ul class="stack-list">
+          <li>Git / GitHub</li>
+          <li>VS Code</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <h2 class="section-title"><span class="tag"></span>Projects<span class="tag"></span></h2>
+    <p class="section-sub">// Things I've built end-to-end</p>
+
+    <div class="project-list">
+
+      <article class="project-card">
+        <div class="project-head">
+          <span class="file-icon">📦</span>
+          <h3 class="project-name">Fresh-Track and Reminder</h3>
+          <span class="project-status">main</span>
+        </div>
+        <p class="project-desc">A web app for tracking Food Expiry and setting reminders before expiring.</p>
+        <div class="project-tags">
+          <span class="tag-pill">Flask</span>
+          <span class="tag-pill">SQLite</span>
+          <span class="tag-pill">JavaScript</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="link-line">→ github</a>
+          <a href="#" class="link-line">→ live demo</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-head">
+          <span class="file-icon">📦</span>
+          <h3 class="project-name">Food Restaurant</h3>
+          <span class="project-status">main</span>
+        </div>
+        <p class="project-desc">A web app for managing food ordering through a Digital device like phone,etc.</p>
+        <div class="project-tags">
+          <span class="tag-pill">HTML</span>
+          <span class="tag-pill">JS</span>
+          <span class="tag-pill">CSS</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="link-line">→ github</a>
+          <a href="#" class="link-line">→ live demo</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <h2 class="section-title"><span class="tag"></span>Experience<span class="tag"></span></h2>
+    <p class="section-sub">// git log --oneline</p>
+
+    <div class="commit-log">
+      <div class="commit">
+        <span class="commit-hash">a1b2c3d</span>
+        <div class="commit-body">
+          <p class="commit-msg">Full Stack Development Intern — ISM(Indian Service Machine)</p>
+          <p class="commit-meta">March 2026 – April 2026 · Full Stack Development.</p>
+        </div>
+      </div>
+      <div class="commit">
+        <span class="commit-hash">e4f5g6h</span>
+        <div class="commit-body">
+          <p class="commit-msg">BCA, The Oxford College of Science</p>
+          <p class="commit-meta">2023 – 2026 · Bangalore University</p>
+        </div>
+      </div>
+      <div class="commit">
+        <span class="commit-hash">i7j8k9l</span>
+        <div class="commit-body">
+          <p class="commit-msg">Certification / BCA</p>
+          <p class="commit-meta">2023 · The Oxford College of Science</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact-section" id="contact">
+    <h2 class="section-title"><span class="tag"></span>Contact<span class="tag"></span></h2>
+    <p class="section-sub">// Always open to interesting work</p>
+
+    <div class="contact-grid">
+      <a href="mailto:vikasbhat991@gmail.com" class="contact-card">
+        <span class="contact-label">email</span>
+        <span class="contact-value">vikasbhat991@gmail.com</span>
+      </a>
+      <a href="#" class="contact-card">
+        <span class="contact-label">github</span>
+        <span class="contact-value">github.com/Vikas-Codex</span>
+      </a>
+      <a href="#" class="contact-card">
+        <span class="contact-label">linkedin</span>
+        <span class="contact-value">linkedin.com/in/Vikas bhat</span>
+      </a>
+      <a href="#" class="contact-card">
+        <span class="contact-label">phone</span>
+        <span class="contact-value">+91 63617 89413</span>
+      </a>
+    </div>
+
+    <footer class="footer">
+      <p>Built by Vikas Bhat A · 2026</p>
+    </footer>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
